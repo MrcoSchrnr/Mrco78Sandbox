@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/video-bundles",
+      "handler": "video-bundle.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/video-bundles/count",
+      "handler": "video-bundle.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/video-bundles/:id",
+      "handler": "video-bundle.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/video-bundles",
+      "handler": "video-bundle.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/video-bundles/:id",
+      "handler": "video-bundle.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/video-bundles/:id",
+      "handler": "video-bundle.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

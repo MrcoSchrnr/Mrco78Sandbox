@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "video_bundles",
+  "info": {
+    "name": "VideoBundle",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "videoBundle_ID": {
+      "type": "uid"
+    },
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/training-sessions",
+      "handler": "training-sessions.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/training-sessions/count",
+      "handler": "training-sessions.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/training-sessions/:id",
+      "handler": "training-sessions.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/training-sessions",
+      "handler": "training-sessions.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/training-sessions/:id",
+      "handler": "training-sessions.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/training-sessions/:id",
+      "handler": "training-sessions.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

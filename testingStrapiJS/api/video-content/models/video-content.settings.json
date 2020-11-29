@@ -1,0 +1,53 @@
+{
+  "kind": "collectionType",
+  "collectionName": "video_contents",
+  "info": {
+    "name": "videoContent"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Media": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "Difficulty": {
+      "type": "enumeration",
+      "enum": [
+        "Beginner",
+        "Intermediate",
+        "Pro"
+      ]
+    },
+    "Category": {
+      "type": "enumeration",
+      "enum": [
+        "MMA",
+        "MuayThai",
+        "BJJ",
+        "Boxing",
+        "Wrestling"
+      ]
+    },
+    "training_sessions": {
+      "via": "video_contents",
+      "collection": "training-sessions"
+    }
+  }
+}

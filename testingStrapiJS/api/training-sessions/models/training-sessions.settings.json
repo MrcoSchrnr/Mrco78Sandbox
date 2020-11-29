@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "training_sessions",
+  "info": {
+    "name": "Training Sessions"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "video_contents": {
+      "collection": "video-content",
+      "via": "training_sessions",
+      "dominant": true
+    }
+  }
+}
